@@ -234,7 +234,7 @@ def generate_factor_base(B, n):
 
 def quadratic_sieve(n, B, M, qs_threshold, bypass_psuedoprime_test=False):
 
-    if not bypass_psuedoprime_test and strong_pseudo_prime([2, 3, 5, 7, 11], n):
+    if not bypass_psuedoprime_test and strong_pseudo_prime([2, 3, 5, 7], n):
         print(f"{n} is likely prime")
         return
 
